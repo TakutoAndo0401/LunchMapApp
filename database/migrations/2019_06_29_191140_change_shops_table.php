@@ -14,7 +14,7 @@ class ChangeShopsTable extends Migration
     public function up()
     {
         Schema::table('shops', function (Blueprint $table) {
-            $table->text('image')->change();
+            $table->longText('image')->change();
         });
     }
 

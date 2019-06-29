@@ -63,10 +63,11 @@ class ShopController extends Controller
         $shop->name = $request->name;
         $shop->address = $request->address;
         $shop->body = $request->body;
-        $shop = base64_encode(file_get_contents($request->image->getRealPath()));
-       
         $shop->user_id = $user->id;
+
+        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
         $shop->save();
+
         return redirect()->route('shop.detail' , ['id'=>$shop->id]);
     }
 
@@ -116,8 +117,7 @@ class ShopController extends Controller
         $shop->name = $request->name;
         $shop->address = $request->address;
         $shop->body = $request->body;
-        $shop = base64_encode(file_get_contents($request->image->getRealPath()));
-
+        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
 
         $shop->save();
         return redirect()->route('shop.detail' , ['id'=>$shop->id]);

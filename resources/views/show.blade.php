@@ -6,7 +6,7 @@
         <h2>{{ $shop->name }}</h2>
         <p>{{ $shop->address }}</p>
         <p>作成日：{{ $shop->created_at }}</p>
-        <p><img src="data:image/png;base64,{{ $shop->image }}" alt=""></p>
+        <p><img src="data:image/png;base64,{{ $shop->image }}" alt="imageUpload" class="show-img" ></p>
         <hr>
         <p>{{ $shop->body }}</p>
     </div>
