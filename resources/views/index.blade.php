@@ -26,7 +26,7 @@
     @foreach($shops as $shop)
         <div class="contents-wrap">
                 <div class="contents-img">
-                    <img src="{{ asset('storage/' . $shop->image) }}" alt="image" />
+                    <img src="data:image/png;base64,<?= image ?>">
                 </div>
                 <div class="contents-text">
                     <a href={{ route('shop.detail',['id'=>$shop->id]) }}>

@@ -121,11 +121,11 @@ class ShopController extends Controller
         $shop->address = $request->address;
         $shop->body = $request->body;
 
-        $uploadImg = $request->image;
-        if($uploadImg->isValid()) {
-            $filePath = $uploadImg->store('public');
-            $shop->image = str_replace('public/', '', $filePath);
-        }
+        $image = base64_encode(file_get_contents($request->image->getRealPath()));
+        Bbs::insert([
+            "image" => $image
+        ]);
+
         $shop->save();
         return redirect()->route('shop.detail' , ['id'=>$shop->id]);
     }
