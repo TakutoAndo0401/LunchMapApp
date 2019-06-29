@@ -122,7 +122,7 @@ class ShopController extends Controller
         $shop->body = $request->body;
 
         $image = base64_encode(file_get_contents($request->image->getRealPath()));
-        Bbs::insert([
+        Shop::insert([
             "image" => $image
         ]);
 
