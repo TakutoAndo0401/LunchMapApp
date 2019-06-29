@@ -122,12 +122,9 @@ class ShopController extends Controller
         $shop->body = $request->body;
 
         $image = base64_encode(file_get_contents($request->image->getRealPath()));
-        Shop::insert([
-            "image" => $image
-        ]);
 
         $shop->save();
-        return redirect()->route('shop.detail' , ['id'=>$shop->id]);
+        return redirect()->route('shop.detail' , ['id'=>$shop->id ,  'image' => $image]);
     }
 
     /**
