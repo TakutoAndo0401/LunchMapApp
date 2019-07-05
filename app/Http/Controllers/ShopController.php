@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Shop;
 use Illuminate\Http\Request;
 use App\Http\Requests\ShopRequest;
+use Illuminate\Support\Facades\Storage;
+
 
 class ShopController extends Controller
 {
@@ -65,7 +67,13 @@ class ShopController extends Controller
         $shop->body = $request->body;
         $shop->user_id = $user->id;
 
-        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
+        $image = $shop->image = $request->file('image');
+        $path = Storage::disk('s3')->putFile('/', $image, 'public');
+        $shop->image = Storage::disk('s3')->url($path);
+
+
+
+//        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
         $shop->save();
 
         return redirect()->route('shop.detail' , ['id'=>$shop->id]);
@@ -117,7 +125,12 @@ class ShopController extends Controller
         $shop->name = $request->name;
         $shop->address = $request->address;
         $shop->body = $request->body;
-        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
+
+        $shop->image = $request->image;
+        $path = Storage::disk('s3')->putFile('/', $shop, 'public');
+        $shop->image = Storage::disk('s3')->url($path);
+
+//        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
 
         $shop->save();
         return redirect()->route('shop.detail' , ['id'=>$shop->id]);

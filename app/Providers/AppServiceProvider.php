@@ -20,11 +20,11 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      *
-     * @return void
+     * @return voidc`
      */
     public function boot()
     {
         Schema::defaultStringLength(191);
-        \URL::forceScheme('https');
+        // \URL::forceScheme('https');
     }
 }

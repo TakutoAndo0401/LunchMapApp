@@ -25,7 +25,7 @@ class ShopRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'required|image|mimes:jpeg,png,jpg,heic'
+            'image' => 'required',
         ];
     }
 
@@ -33,8 +33,7 @@ class ShopRequest extends FormRequest
     {
         return [
             'image.required' => '画像を選択してください。',
-            'image.image' => '正しい画像ファイルではありません。',
-            'image.mimes' => 'jpeg,png,jpgのみです。'
+            'image.mimes' => 'jpeg,png,jpg,heicのみです。'
         ];
     }
 }
