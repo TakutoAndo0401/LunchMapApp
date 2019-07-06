@@ -25,7 +25,7 @@ class ShopRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'required|file|image|max:30000|mimes:jpeg,png',
+            'image' => 'required|image|max:3072|mimes:jpeg,png,jpg',
         ];
     }
 
@@ -33,8 +33,9 @@ class ShopRequest extends FormRequest
     {
         return [
             'image.required' => '画像を選択してください。',
-            'image.mimes' => 'アップロードできるのは画像だけです。',
-            'image.max' => '3MBまでアップロードできます。'
+            'image.image' => 'アップロードできるのは画像だけです。',
+            'image.max' => '3MBまでアップロードできます。',
+            'image.mimes' => 'アップロードできるのはjpeg,pngだけです。',
         ];
     }
 }

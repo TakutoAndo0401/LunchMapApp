@@ -13,7 +13,7 @@ class ShopController extends Controller
 
     public function __construct()
     {
-        //ログインしていなくても except で'index'と'show'は見れsるようになる
+        //ログインしていなくても except で'index'と'show'は見れるようになる
         $this->middleware('auth')->except(['index' , 'show']);
     }
 
@@ -108,7 +108,6 @@ class ShopController extends Controller
     {
         $shop = Shop::find($id);
         return view('edit' , ['shop'=>$shop]);
-
     }
 
     /**
@@ -126,8 +125,8 @@ class ShopController extends Controller
         $shop->address = $request->address;
         $shop->body = $request->body;
 
-        $shop->image = $request->image;
-        $path = Storage::disk('s3')->putFile('/', $shop, 'public');
+        $image = $shop->image = $request->file('image');
+        $path = Storage::disk('s3')->putFile('/', $image, 'public');
         $shop->image = Storage::disk('s3')->url($path);
 
 //        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
