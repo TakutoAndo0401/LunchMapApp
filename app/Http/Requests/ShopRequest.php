@@ -21,11 +21,11 @@ class ShopRequest extends FormRequest
      *
      * @return array
      */
-    //Validation のルール
+    //ValidationRules
     public function rules()
     {
         return [
-            'image' => 'required|image|max:3072|mimes:jpeg,png,jpg',
+            'image' => 'required|file|image|max:4096|mimes:jpeg,png,jpg',
         ];
     }
 
@@ -34,7 +34,7 @@ class ShopRequest extends FormRequest
         return [
             'image.required' => '画像を選択してください。',
             'image.image' => 'アップロードできるのは画像だけです。',
-            'image.max' => '3MBまでアップロードできます。',
+            'image.max' => '4MBまでアップロードできます。',
             'image.mimes' => 'アップロードできるのはjpeg,pngだけです。',
         ];
     }

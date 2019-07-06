@@ -124,6 +124,8 @@ class ShopController extends Controller
         $shop->name = $request->name;
         $shop->address = $request->address;
         $shop->body = $request->body;
+        $shop->image = $request->image;
+
 
         $image = $shop->image = $request->file('image');
         $path = Storage::disk('s3')->putFile('/', $image, 'public');

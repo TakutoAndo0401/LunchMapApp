@@ -44,6 +44,9 @@
                                 <div class="col-md-6">
                                     <input id="image" type="file" class="form-control" name="image" value="{{ old('image', $shop->image) }}">
                                 </div>
+                                @if ($errors->has('image'))
+                                    <span class="error">{{ $errors->first('image') }}</span>
+                                @endif
                             </div>
 
                             <div class="form-group row mb-0">
