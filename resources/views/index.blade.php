@@ -18,35 +18,25 @@
 
     {{-- @authの中はログインしている時だけ表示させる --}}
     @auth
-        <div >
+        <div>
             <a href="{{ route('shop.new') }}" class='btn btn-outline-primary'>新しいお店</a>
         </div>
     @endauth
-
+    <div class="contents" style="margin: 0; padding: 0;  border: 0;">
     @foreach($shops as $shop)
-        <div class="contents-wrap">
+
+            <div class="contents-wrap">
                 <div class="contents-img">
-{{--                    <img src="data:image/png;base64,{{ $shop->image }}" alt="">--}}
+                    {{-- <img src="data:image/png;base64,{{ $shop->image }}" alt=""> --}}
                     <img src="{{ $shop->image }}" alt="imageUpload">
                 </div>
                 <div class="contents-text">
-                    <a href={{ route('shop.detail',['id'=>$shop->id]) }}>
-                    <h4>
-                        {{ $shop->name }}
-
-                    </h4>
-                    </a>
-                    <a>
-                        {{ $shop->address }}
-                    </a>
+                    <a href={{ route('shop.detail',['id'=>$shop->id]) }}><h4>{{ $shop->name }}</h4></a>
+                    <a>{{ $shop->address }}</a>
                     <br>
-                    <a>
-                        投稿者： {{ $shop->user->name }}
-                    </a>
+                    <a>投稿者： {{ $shop->user->name }}</a>
                 </div>
-
-        </div>
-
+            </div>
     @endforeach
-
+    </div>
 @endsection
