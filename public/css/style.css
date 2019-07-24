@@ -45,14 +45,15 @@
 }
 
 .contents-img img {
-    display: block;
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
 }
 
 .show-img{
     width: 30%;
     height: auto;
+
 }
 
 @media screen and (max-width: 768px){
@@ -69,9 +70,10 @@
         border: 2px dotted #ddd;
         width: 100%;
     }
-    .contents-img{
-        width: 80%;
-        height: auto;
+    .contents-img img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
     }
     .contents-text h4 {
         padding-top: 10px;
@@ -79,6 +81,7 @@
     }
     .contents-text{
         font-size: 14px;
+        text-align: center;
     }
     .show-img{
         width: 100%;
