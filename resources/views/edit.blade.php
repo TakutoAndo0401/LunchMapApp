@@ -16,7 +16,7 @@
                             {{ method_field('patch') }}
 
                             <div class="form-group row">
-                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('店名') }}</label>
+                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('店名 (必須)') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="name" type="text" class="form-control" name="name" value="{{ old('name', $shop->name) }}" required autocomplete="name" autofocus>
@@ -24,7 +24,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('場所') }}</label>
+                                <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('住所 (必須)') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="address" type="text" class="form-control" name="address" value="{{ old('address', $shop->address) }}" required autocomplete="address">
@@ -32,7 +32,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="body" class="col-md-4 col-form-label text-md-right">{{ __('説明') }}</label>
+                                <label for="body" class="col-md-4 col-form-label text-md-right">{{ __('説明 (任意)') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="body" type="text" class="form-control" name="body" value="{{ old('body', $shop->body) }}">
@@ -40,7 +40,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('写真を選択する') }}</label>
+                                <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('写真を選択する (必須)') }}</label>
                                 <div class="col-md-6">
                                     <input id="image" type="file" class="form-control" name="image" value="{{ old('image', $shop->image) }}">
                                 </div>

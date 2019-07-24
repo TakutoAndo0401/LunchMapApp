@@ -3,10 +3,11 @@
 @section('contents')
 
     <div>
-        <h2>{{ $shop->name }}</h2>
-        <p>{{ $shop->address }}</p>
-        <p>作成日：{{ $shop->created_at }}</p>
-{{--        <p><img src="data:image/png;base64,{{ $shop->image }}" alt="imageUpload" class="show-img" ></p>--}}
+        <h2>{{ $shop->name }}</h2><br>
+        <p style="display:inline;">住所：{{ $shop->address }}</p><br>
+        <p style="display:inline;">作成日：{{ $shop->created_at }}</p>
+        <p>投稿者： {{ $shop->user->name }}</p>
+        {{--        <p><img src="data:image/png;base64,{{ $shop->image }}" alt="imageUpload" class="show-img" ></p>--}}
         <img src="{{ $shop->image }}" alt="imageUpload" class="show-img">
         <hr>
         <p>{{ $shop->body }}</p>

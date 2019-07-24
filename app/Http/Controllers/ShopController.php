@@ -29,9 +29,10 @@ class ShopController extends Controller
             $message = '検索ワード : '.$keyword;
             $shops = Shop::where('name','like', '%' . $keyword . '%')
                 ->orWhere('address','like', '%' . $keyword . '%')
+                ->orderBy('id', 'desc')
                 ->get();
         } else {
-            $shops = Shop::all();
+            $shops = Shop::all()->sortByDesc('id');
             $message = '';
         }
 
@@ -70,7 +71,6 @@ class ShopController extends Controller
         $image = $shop->image = $request->file('image');
         $path = Storage::disk('s3')->putFile('/', $image, 'public');
         $shop->image = Storage::disk('s3')->url($path);
-
 
 
 //        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
@@ -125,7 +125,6 @@ class ShopController extends Controller
         $shop->address = $request->address;
         $shop->body = $request->body;
         $shop->image = $request->image;
-
 
         $image = $shop->image = $request->file('image');
         $path = Storage::disk('s3')->putFile('/', $image, 'public');

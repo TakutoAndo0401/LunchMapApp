@@ -11,18 +11,18 @@
     </div>
     <p>{{ $message }}</p>
     <div class='form-group'>
-        {{ Form::submit('検索', ['class' => 'btn btn-outline-primary'])}}
-        <a href="{{ route('shop.list') }}" class="btn btn-outline-primary">クリア</a>
+        {{ Form::submit('検索', ['class' => 'btn btn-outline-success'])}}
+        <a href="{{ route('shop.list') }}" class="btn btn-outline-danger">クリア</a>
     </div>
     {{ Form::close() }}
 
     {{-- @authの中はログインしている時だけ表示させる --}}
     @auth
         <div>
-            <a href="{{ route('shop.new') }}" class='btn btn-outline-primary'>新しいお店</a>
+            <a href="{{ route('shop.new') }}" class='btn btn-outline-primary' style="margin-bottom: 3%;">新しいお店</a>
         </div>
     @endauth
-    <div class="contents" style="margin: 0; padding: 0;  border: 0;">
+    <div class="contents">
     @foreach($shops as $shop)
 
             <div class="contents-wrap">
@@ -31,10 +31,9 @@
                     <img src="{{ $shop->image }}" alt="imageUpload">
                 </div>
                 <div class="contents-text">
-                    <a href={{ route('shop.detail',['id'=>$shop->id]) }}><h4>{{ $shop->name }}</h4></a>
-                    <a>{{ $shop->address }}</a>
-                    <br>
-                    <a>投稿者： {{ $shop->user->name }}</a>
+                    <a class="Link" href={{ route('shop.detail',['id'=>$shop->id]) }}></a>
+                    <h4>{{ $shop->name }}</h4>
+                    <a>{{ $shop->address }}</a><br>
                 </div>
             </div>
     @endforeach
