@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6fb175b-7e66-425a-8588-6d544b7f6c66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d6fb175b-7e66-425a-8588-6d544b7f6c66" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,48 +24,11 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>type</find>
-      <find>images</find>
-      <find>providers</find>
-      <find>aliases</find>
-      <find>i</find>
-      <find>sql_mode</find>
-      <find>STRICT_TRANS_TABLES</find>
-      <find>name</find>
-      <find>You are receiving this email because</find>
-      <find>php.ini</find>
-      <find>$action</find>
-      <find>validation.php</find>
-      <find>ResetsPasswords</find>
-      <find>public function reset</find>
-      <find>'required|confirmed|</find>
-      <find>eight characters</find>
-      <find>validatePasswordWithDefaults</find>
-      <find>return Password::broker();</find>
-      <find>'password' =&gt; 'required</find>
-      <find>Login</find>
-      <find>1</find>
-      <find>.container</find>
-      <find>background</find>
-      <find>the image faile</find>
-      <find>The image fail</find>
-      <find>middlewareGroups</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/public/storage/post_images</dir>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="PhpServers">
-    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
