@@ -6,7 +6,7 @@ use App\Shop;
 use Illuminate\Http\Request;
 use App\Http\Requests\ShopRequest;
 use Illuminate\Support\Facades\Storage;
-
+use Intervention\Image\Facades\Image;
 
 class ShopController extends Controller
 {
@@ -68,11 +68,25 @@ class ShopController extends Controller
         $shop->body = $request->body;
         $shop->user_id = $user->id;
 
-        $image = $shop->image = $request->file('image');
-        $image->getClientMimeType();
-        $image->getClientOriginalExtension();
-        $path = Storage::disk('s3')->putFile('/', $image, 'public');
-        $shop->image = Storage::disk('s3')->url($path);
+
+
+
+
+        $path='public';
+        $file_path=$path.time().'.jpg';
+
+        Image::configure(array('driver' => 'gd'));
+
+        $image = Image::make($shop->image = $request->file('image'));
+        $image->encode('jpg');
+
+        Storage::disk('s3')->put( $file_path, (string) $image , 'public');
+
+        $shop->image = Storage::disk('s3')->url($file_path);
+
+
+
+
 
 
 //        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));

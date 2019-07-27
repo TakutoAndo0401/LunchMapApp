@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6fb175b-7e66-425a-8588-6d544b7f6c66" name="Default Changelist" comment="" />
+    <list default="true" id="d6fb175b-7e66-425a-8588-6d544b7f6c66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php5PbVAp" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php5PbVAp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php6XCC2P" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php6XCC2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php9KX8GU" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php9KX8GU" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php9epFLT" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php9epFLT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpDS9iZG" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpDS9iZG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpVqrUkL" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpVqrUkL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpjT61B6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpjT61B6" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
