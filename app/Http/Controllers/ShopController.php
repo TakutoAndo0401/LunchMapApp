@@ -67,9 +67,6 @@ class ShopController extends Controller
         $shop->user_id = $user->id;
 
         $image = $shop->image = $request->file('image');
-        $image->getClientOriginalName();
-        $image->getClientMimeType();
-        $image->getClientOriginalExtension();
         $path = Storage::disk('s3')->putFile('/', $image, 'public');
         $shop->image = Storage::disk('s3')->url($path);
 //        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
