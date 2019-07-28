@@ -1,5 +1,5 @@
 <h2>みんなで共有！ランチマップ</h2>
-Laravelを用いて制作したアプリケーションです。(まだ開発段階)<br>
+Laravelを用いて制作したアプリケーションです。<br>
 URL : https://lunchmap-app.herokuapp.com <br>
 <br>
 <p>画像アップロードについて<p>
