@@ -25,7 +25,7 @@ class ShopRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'required|file|image',
+            'image' => 'required|file|image|max:4096|mimes:image/jpeg,image/png,image/jpg,image/heic,image/bmp',
         ];
     }
     public function messages()
