@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6fb175b-7e66-425a-8588-6d544b7f6c66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php5PbVAp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php6XCC2P" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php9KX8GU" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/php9epFLT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpDS9iZG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpVqrUkL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpX0wB2J" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/var/folders/yt/2gjp82cn5xg82p6rvdqtxwf80000gn/T/phpjT61B6" beforeDir="false" />
-    </list>
+    <list default="true" id="d6fb175b-7e66-425a-8588-6d544b7f6c66" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,15 +203,6 @@
       <workItem from="1564047595966" duration="176000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

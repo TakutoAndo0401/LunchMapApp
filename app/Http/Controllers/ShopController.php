@@ -57,7 +57,7 @@ class ShopController extends Controller
      * @return \Illuminate\Http\Response
      */
     //お店追加の保存処理(/shopの時)
-    public function store(ShopRequest $request)
+    public function store(Request $request)
     {
         $shop = new Shop();
         $user = \Auth::user();
