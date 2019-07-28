@@ -8,7 +8,7 @@
                     <div class="card-header">{{ __('新しくお店を追加する') }}</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('shop.store') }}" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('shop.store') }}" enctype='multipart/form-data'>
                             @csrf
 
                             <div class="form-group row">
