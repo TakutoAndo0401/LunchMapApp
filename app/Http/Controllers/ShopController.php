@@ -57,7 +57,7 @@ class ShopController extends Controller
      * @return \Illuminate\Http\Response
      */
     //お店追加の保存処理(/shopの時)
-    public function store(Request $request)
+    public function store(ShopRequest $request)
     {
         $shop = new Shop();
         $user = \Auth::user();
@@ -70,8 +70,8 @@ class ShopController extends Controller
         $shop->image = Storage::disk('s3')->url($path);
 //        $shop->image = base64_encode(file_get_contents($request->image->getRealPath()));
         $shop->save();
-
         return redirect()->route('shop.detail' , ['id'=>$shop->id]);
+
     }
 
     /**
