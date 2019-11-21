@@ -53,7 +53,6 @@
 .show-img{
     width: 30%;
     height: auto;
-
 }
 
 @media screen and (max-width: 768px){
@@ -86,5 +85,16 @@
     .show-img{
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .contents-wrap{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        border: 2px dotted #ddd;
+        width: 100%;
     }
 }
